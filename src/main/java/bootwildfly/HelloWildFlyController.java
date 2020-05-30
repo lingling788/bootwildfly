@@ -13,7 +13,7 @@ public class HelloWildFlyController {
     @RequestMapping("hello")
     public String sayHello(){
     	try {
-    	      File myObj = new File("filename.txt");
+    	      File myObj = new File("/bootwildfly2/download/filename.txt");
     	      if (myObj.createNewFile()) {
     	        System.out.println("File created: " + myObj.getName());
     	      } else {
